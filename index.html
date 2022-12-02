@@ -8,6 +8,7 @@
     <title>Your's Library</title>
     <link rel="icon" href="./image/bookslogo.jpg">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -20,6 +21,11 @@
         </div>
     </div>
 
+    <div class="offer">
+        <p><i class="fa fa-bell-o"></i> Flat 15% Off on our new Fiction Books. Sale starts in <span id="demo"></span>
+        </p>
+    </div>
+
     <div class="navbar">
         <ul>
             <li>Home</li>
@@ -30,18 +36,100 @@
             <li>Sign Up</li>
         </ul>
     </div>
-    <div class="home">
-        <div class="left">
-            <h1>Your Trotify always with you</h1>
+    <div class='head'>
+        <div class='left_head'>
+            <h>Your <span>Saathi</span> Always With you</h>
 
-            <p1>The view from the lighthouse excited even the most seasoned traveler. I currently have 4 windows open
-                up…and I don’t know why. You're unsure whether or not to trust him, but very thankful that you wore a
-                turtle neck.Normal activities took extraordinary amounts of concentration at the high altitude.</p1>
+            <p>The view from the lighthouse excited even the most seasoned traveler.
+                I currently have 4 windows open up…and I don’t know why.
+                You're unsure whether or not to trust him, but very thankful that you wore a turtle neck.
+
+                <!-- {/*This portion will be hidden in mobile view */} -->
+
+                <span>
+                    Normal activities took extraordinary amounts of concentration at the high altitude.
+                </span>
+            </p>
+            <button class='view'>View Documentation</button>
         </div>
-        <div class="right">
-            <img src="./image/bg.png" alt="logo2" width="100%"    
+        <div class='right_head'>
+            <img src="./image/bg.png">
         </div>
     </div>
+
+    <div class='service'>
+        <h>Books Category</h>
+
+        <!-- {/* service-box1 class is visible all times,it contains first four boxes  */} -->
+
+        <div class='service-box1'>
+            <div class='inner-service'>
+                <!-- <div class="service-icon"><FontAwesomeIcon icon={faPhone} /></div> -->
+                <br />
+                <h>Feel Unsafe</h>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class='inner-service'>
+                <!-- <div class="service-icon"><FontAwesomeIcon icon={faAmbulance} /></div> -->
+                <br />
+                <h>Ambulance</h>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class='inner-service'>
+                <!-- <div class="service-icon"><FontAwesomeIcon icon={faBattery2} /></div> -->
+                <br />
+                <h>Need Blood</h>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class='inner-service'>
+                <!-- <div class="service-icon"><FontAwesomeIcon icon={faFireFlameCurved} /></div> -->
+                <br />
+                <h>Fire Brigade</h>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <!-- {/*Tool id is used to hide the portion */} -->
+
+        <div id='tool'>
+
+            <!-- {/*This portion will be appear after clicking more tools */} -->
+
+            <div class='service-box2'>
+                <div class='inner-service'>
+                    <!-- <div class="service-icon"><FontAwesomeIcon icon={faUser} /></div> -->
+                    <br />
+                    <h>Police</h>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class='inner-service'>
+                    <!-- <div class="service-icon"><FontAwesomeIcon icon={faHouseChimney} /></div> -->
+                    <br />
+                    <h>Call your family</h>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class='inner-service'>
+                    <!-- <div class="service-icon"><FontAwesomeIcon icon={faMusic} /></div> -->
+                    <br />
+                    <h>Listen Music</h>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class='inner-service'>
+                    <!-- <div class="service-icon"><FontAwesomeIcon icon={faHeart} /></div> -->
+                    <br />
+                    <h>Call your Loved ones</h>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='more_button'>
+        <button class='more' onClick="more()">
+            <p id="mode">More <i class="fa fa-arrow-down"></i></p>
+
+        </button>
+    </div>
+    <script src="index.js"></script>
 
 </body>
 
